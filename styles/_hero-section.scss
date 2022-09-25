@@ -1,0 +1,86 @@
+// HERO SECTION
+.hero__section{
+    background: url(../assets/img/paw-bg.jpg);
+    @include background;
+    min-height: 80vh;
+    @include display;
+    padding: 0 5%;
+    gap: 5em;
+
+    &--left__side{
+        max-width: 800px;
+
+        & h2{
+            font-family: 'Caveat Brush', cursive;
+            font-size: 60px;
+
+            @include media-query(350px){
+                font-size: 40px;
+            }
+        }
+
+        & p{
+            margin-top: 1.5em;
+            font-family: 'Chelsea Market', cursive;
+        }
+
+        @include media-query(971px){
+            max-width: 500px;
+        }
+    }
+
+    &--right__side{
+        position: relative;
+        text-align: center;
+        margin-top: 2.5em;
+
+        &--inputs{
+            
+            & select{
+                width: 425px;
+                padding: 15px 10px;
+                border-radius: 10px;
+                margin-top: 12px;
+                color: $grey-color;
+                border: none;
+                outline: 0.1mm solid $black-color;
+
+                & option{
+                    background-color: $light-grey-color;
+                }
+
+                @include media-query(971px){
+                    display: block;
+                }
+
+                @include media-query(480px){
+                    width: 100%;
+                }
+            }
+
+            & button{
+                margin-top: 3em;
+                @include button;
+
+                @include media-query(400px){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        @include media-query(971px){
+            margin-top: 1em;
+        }
+
+        @include media-query(480px){
+            width: 100%
+        }
+    }
+
+    @include media-query(971px){
+        @include display;
+        flex-direction: column;
+        text-align: center;
+        gap: 2em;
+    }
+}

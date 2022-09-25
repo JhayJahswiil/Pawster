@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Chelsea+Market&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Chelsea+Market&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 3%;
+  position: relative;
+}
+header nav .nav__logo {
+  order: 2;
+}
+header nav .nav__logo svg {
+  width: 230px;
+}
+header nav .nav__menu--left {
+  order: 1;
+}
+header nav .nav__menu--left ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+header nav .nav__menu--left ul a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Chelsea Market", cursive;
+  font-size: 17px;
+}
+header nav .nav__menu--right {
+  order: 3;
+}
+header nav .nav__menu--right ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+header nav .nav__menu--right ul a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Chelsea Market", cursive;
+  font-size: 17px;
+}
+@media screen and (max-width: 960px) {
+  header nav {
+    display: none;
+  }
+}
+
+.hero__section {
+  background: url(../assets/img/paw-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  gap: 5em;
+}
+.hero__section--left__side {
+  max-width: 800px;
+}
+.hero__section--left__side h2 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 60px;
+}
+@media screen and (max-width: 350px) {
+  .hero__section--left__side h2 {
+    font-size: 40px;
+  }
+}
+.hero__section--left__side p {
+  margin-top: 1.5em;
+  font-family: "Chelsea Market", cursive;
+}
+@media screen and (max-width: 971px) {
+  .hero__section--left__side {
+    max-width: 500px;
+  }
+}
+.hero__section--right__side {
+  position: relative;
+  text-align: center;
+  margin-top: 2.5em;
+}
+.hero__section--right__side--inputs select {
+  width: 425px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin-top: 12px;
+  color: #868383;
+  border: none;
+  outline: 0.1mm solid #000;
+}
+.hero__section--right__side--inputs select option {
+  background-color: #ECEBEB;
+}
+@media screen and (max-width: 971px) {
+  .hero__section--right__side--inputs select {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__section--right__side--inputs select {
+    width: 100%;
+  }
+}
+.hero__section--right__side--inputs button {
+  margin-top: 3em;
+  background-color: #DB7C12;
+  color: #fff;
+  padding: 15px 25px;
+  font-family: "Chelsea Market", cursive;
+  border: none;
+  border-radius: 5px;
+}
+.hero__section--right__side--inputs button:hover {
+  background-color: #ed8e24;
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  .hero__section--right__side--inputs button {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 971px) {
+  .hero__section--right__side {
+    margin-top: 1em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__section--right__side {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 971px) {
+  .hero__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+  }
+}
+
+.numbers__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 4em;
+}
+.numbers__section--card {
+  background-color: #ECEBEB;
+  height: 200px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 10px;
+  font-family: "Caveat Brush", cursive;
+  transition: 0.3s ease-in-out;
+}
+.numbers__section--card h3 {
+  padding: 0 5em 0;
+  font-size: 25px;
+}
+.numbers__section--card p {
+  font-family: "Chelsea Market", cursive;
+  margin-top: 20px;
+  max-width: 200px;
+  font-size: 14px;
+}
+.numbers__section--card:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 820px) {
+  .numbers__section--card {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .numbers__section {
+    flex-direction: column;
+  }
+}
+
+.images__section {
+  background-color: #ECEBEB;
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 0 3%;
+  text-align: center;
+  min-height: 40vh;
+}
+.images__section--card {
+  font-family: "Caveat Brush", cursive;
+}
+.images__section--card img {
+  width: 100px;
+}
+@media screen and (max-width: 820px) {
+  .images__section--card img {
+    width: 36%;
+  }
+}
+.images__section--card p {
+  font-family: "Chelsea Market", cursive;
+  font-size: 14px;
+  margin-top: 10px;
+  max-width: 200px;
+}
+@media screen and (max-width: 820px) {
+  .images__section--card p {
+    margin: 15px auto;
+    font-size: 23px;
+    max-width: 310px;
+    border-bottom: 1px solid #868383;
+  }
+}
+@media screen and (max-width: 820px) {
+  .images__section {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    min-height: 100vh;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search__section {
+  margin-top: 4em;
+  text-align: center;
+}
+.search__section h4 {
+  margin-top: 2px;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+.search__section button {
+  background-color: #DB7C12;
+  color: #fff;
+  padding: 15px 25px;
+  font-family: "Chelsea Market", cursive;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2.5em;
+}
+.search__section button:hover {
+  background-color: #ed8e24;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #ECEBEB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 4%;
+  margin-top: 4em;
+}
+footer .footer__left p {
+  font-family: "Chelsea Market", cursive;
+}
+footer .footer__left p:last-child {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+@media screen and (max-width: 820px) {
+  footer .footer__left p:last-child {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer .footer__left {
+    text-align: center;
+  }
+}
+footer .footer__right i:first-child {
+  padding: 10px 13px;
+}
+footer .footer__right i {
+  background-color: #DB7C12;
+  color: #fff;
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+footer .footer__right i:hover {
+  background-color: #ed8e24;
+  cursor: pointer;
+}
+@media screen and (max-width: 650px) {
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.mobile__nav {
+  padding: 20px 5%;
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .mobile__nav {
+    display: block;
+  }
+  .mobile__nav .mobile__nav--logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile__nav .mobile__nav--logo svg {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 960px) and (max-width: 350px) {
+  .mobile__nav .mobile__nav--logo svg {
+    width: 205px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .mobile__nav .mobile__nav--hamburger {
+    z-index: 2;
+  }
+  .mobile__nav .mobile__nav--hamburger i {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 960px) and (max-width: 280px) {
+  .mobile__nav .mobile__nav--hamburger i {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .mobile__nav .mobile__nav--menu {
+    position: absolute;
+    top: 0;
+    right: -300px;
+    background-color: #fff;
+    height: 100vh;
+    width: 300px;
+    font-family: "Chelsea Market", cursive;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+  }
+  .mobile__nav .mobile__nav--menu.open {
+    right: 0;
+  }
+  .mobile__nav .mobile__nav--menu ul {
+    list-style: none;
+    margin-top: 7em;
+  }
+  .mobile__nav .mobile__nav--menu ul a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    display: block;
+    text-align: center;
+    padding: 22px;
+    margin-top: 17px;
+  }
+  .mobile__nav .mobile__nav--menu ul a:hover {
+    background-color: #DB7C12;
+    color: #fff;
+  }
+}
+
+body {
+  width: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+@import 'reset';
+@import 'colors';
+@import 'mixins';
+@import 'media-query';
+@import 'header';
+@import 'hero-section';
+@import 'cards-section';
+@import 'search-section';
+@import 'footer';
+@import 'mobile-nav';
+
+body{
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}

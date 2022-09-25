@@ -1,0 +1,129 @@
+// MOBILE NAV
+.mobile__nav{
+    padding: 20px 5%;
+    display: none;
+    
+    @include media-query(960px){
+        display: block;
+
+        .mobile__nav--logo{
+            @include display(space-between);
+
+            & svg{
+                width: 260px;
+
+                @include media-query(350px){
+                    width: 205px;
+                }
+            }
+        }
+
+        .mobile__nav--hamburger{
+            z-index: 2;
+
+            & i{
+                font-size: 26px;
+
+                @include media-query(280px){
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .mobile__nav--menu{
+            position: absolute;
+            top: 0;
+            right: -300px;
+            background-color: $white-color;
+            height: 100vh;
+            width: 300px;
+            font-family: "Chelsea Market", cursive;
+            transition: .3s ease-in-out;
+            z-index: 1;
+
+            &.open{
+                right: 0;
+            }
+
+            & ul{
+                list-style: none;
+                margin-top: 7em;
+
+                & a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: $black-color;
+                    display: block;
+                    text-align: center;
+                    padding: 22px;
+                    margin-top: 17px;
+
+                    &:hover{
+                        background-color: $orange-color;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+// .mobile__nav{
+//     padding: 22px 5%;
+//     display: none;
+
+//     &.open{
+//         min-height: 40vh;
+
+//         @media screen and (max-height: 680px) {
+//             min-height: 43vh;
+//         }
+
+//         @media screen and (max-height: 480px) {
+//             min-height: 60vh;
+//         }
+
+//     }
+//     @include media-query(960px){
+//         display: block;
+//         height: 13vh;
+//         transition: .3s ease-out;
+
+//         .mobile__nav--logo{
+//             @include display(space-between);
+
+//             & svg{
+//                 width: 250px;
+
+//                 // @include media-query(360px){
+//                 //     width: 200$;
+//                 // }
+//             }
+
+//             & i{
+//                 font-size: 23px;
+//             }
+//         }
+
+//         .mobile__nav--menu{
+//             margin-top: 10px;
+
+//             & ul{
+//                 list-style: none;
+//                 opacity: 0;
+//                 transition: .165s ease-in;
+
+//                 &.open-ul{
+//                     opacity: 1;
+//                 }
+
+//                 & a{
+//                     text-decoration: none;
+//                     color: $black-color;
+//                     display: block;
+//                     padding: 15px;
+//                     font-family: 'Chelsea Market', cursive;
+//                 }
+//             }
+//         }
+//     }
+// }

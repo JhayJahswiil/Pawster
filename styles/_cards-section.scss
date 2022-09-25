@@ -1,0 +1,82 @@
+// NUMBER CARDS SECTION
+.numbers__section{
+    @include display;
+    gap: 30px;
+    margin-top: 4em;
+
+    &--card{
+        background-color: $light-grey-color;
+        height: 200px;
+        width: 250px;
+        @include display;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 10px;
+        font-family: 'Caveat Brush', cursive;
+        transition: .3s ease-in-out;
+
+        & h3{
+            padding: 0 5em 0;
+            font-size: 25px;
+        }
+
+        & p{
+            font-family: 'Chelsea Market', cursive;
+            margin-top: 20px;
+            max-width: 200px;
+            font-size: 14px;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        @include media-query(820px){
+            width: 90%;
+        }
+    }
+
+    @include media-query(820px){
+        flex-direction: column;
+    }
+}
+
+// IMAGES CARDS SECTION
+.images__section{
+    background-color: $light-grey-color;
+    @include card-sections;
+    text-align: center;
+    min-height: 40vh;
+
+    &--card{
+        font-family: 'Caveat Brush', cursive;
+
+        & img{
+            width: 100px;
+
+            @include media-query(820px){
+                width: 36%;
+            }
+        }
+
+        & p{
+            font-family: 'Chelsea Market', cursive;
+            font-size: 14px;
+            margin-top: 10px;
+            max-width: 200px;
+
+            @include media-query(820px){
+                margin: 15px auto;
+                font-size: 23px;
+                max-width: 310px;
+                border-bottom: 1px solid $grey-color;
+            }
+        }
+    }
+
+    @include media-query(820px){
+        grid-template-columns: 1fr;
+        gap: 10px;
+        min-height: 100vh;
+    }
+}
