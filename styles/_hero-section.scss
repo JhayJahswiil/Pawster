@@ -37,13 +37,13 @@
         &--inputs{
             
             & select{
-                width: 425px;
+                width: 400px;
                 padding: 15px 10px;
                 border-radius: 10px;
                 margin-top: 12px;
                 color: $grey-color;
                 border: none;
-                outline: 1px solid $black-color;
+                outline: none;
 
                 & option{
                     background-color: $light-grey-color;
@@ -51,12 +51,14 @@
 
                 @include media-query(971px){
                     display: block;
+                    outline: 1px solid $black-color;
                 }
 
                 @include media-query(480px){
                     width: 85%;
                     margin: auto;
                     margin-top: 16px;
+                    border-radius: 15px;
                 }
             }
 

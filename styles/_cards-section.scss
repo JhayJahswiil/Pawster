@@ -27,10 +27,6 @@
             font-size: 14px;
         }
 
-        &:hover{
-            transform: scale(1.1);
-        }
-
         @include media-query(820px){
             width: 90%;
         }
