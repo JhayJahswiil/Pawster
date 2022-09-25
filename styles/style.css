@@ -122,7 +122,9 @@ header nav .nav__menu--right ul a {
 }
 @media screen and (max-width: 480px) {
   .hero__section--right__side--inputs select {
-    width: 100%;
+    width: 85%;
+    margin: auto;
+    margin-top: 16px;
   }
 }
 .hero__section--right__side--inputs button {
