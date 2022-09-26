@@ -1,8 +1,9 @@
 // NUMBER CARDS SECTION
 .numbers__section{
     @include display;
-    gap: 30px;
+    gap: 40px;
     margin-top: 4em;
+    padding: 0 2%;
 
     &--card{
         background-color: $light-grey-color;
